@@ -1,0 +1,140 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.Topbar {
+  width: 100%;
+  background-color: #282c34;
+  padding: 24px 48px 12px;
+  text-align: center;
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.Topbar > img { 
+  width: 100px;
+}
+
+.MainContainer {
+  padding: 4% 7%;
+  margin-top: 50px;
+  box-sizing: border-box;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ProductPreview {
+  width: 100%;
+  position: relative;
+ 
+}
+
+.ProductPreview > img {
+  width: 100%;
+}
+
+.TimeSection{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.HeartBeatSection{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -40%);
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.HeartBeatSection > i {
+   color: red;
+   animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1, 1);
+  }
+  50%{
+    transform: scale(1.2, 1.2);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+}
+
+.HeartBeatSection > p {
+  margin-top: 10px;
+}
+
+.ProductData {
+  width: 100%;
+}
+.ProductTitle{
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.ProductDescription{
+  font-size: 20px;
+  color: rgba(0,0,0,0.8);
+  margin-bottom: 16px;
+}
+
+.SectionHeading{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.ProductImage{
+  width: 100%;
+  max-width: 80px;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.SelectedProductImage {
+  border: 2px solid teal;
+}
+
+.FeatureItem{
+  min-width: 80px;
+  background-color: gainsboro;
+  border-radius: 8px;
+  border: 0;
+  box-sizing: content-box;
+  padding: 12px 24px;
+  margin-right: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.SelectedFeatureItem {
+  color: white;
+  background-color: gray;
+}
+
+.PrimaryButton{
+  color: white;
+  background-color: teal;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0;
+  padding: 12px 24px;
+  margin-top: 26px;
+}
